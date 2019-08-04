@@ -22,7 +22,7 @@ export const PoweredBy = ({ className, ...props }) => (
 	<h3 className={createClassName(styles, 'powered-by', {}, [className])} {...props}>
 		{I18n.t('Powered by iCloudPortal').split('iCloudPortal')[0]}
 		<a href="https://icloudportal.com" target="_blank" rel="noopener noreferrer">
-			<Logo className={createClassName(styles, 'powered-by__logo')} width={60} role="img" aria-label="iCloudPortal" />
+			iCloudPortal
 		</a>
 		{I18n.t('Powered by iCloudPortal').split('iCloudPortal')[1]}
 	</h3>
