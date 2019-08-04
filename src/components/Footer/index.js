@@ -20,11 +20,11 @@ export const FooterContent = ({ children, className, ...props }) => (
 
 export const PoweredBy = ({ className, ...props }) => (
 	<h3 className={createClassName(styles, 'powered-by', {}, [className])} {...props}>
-		{I18n.t('Powered by Rocket.Chat').split('Rocket.Chat')[0]}
-		<a href="https://rocket.chat" target="_blank" rel="noopener noreferrer">
-			<Logo className={createClassName(styles, 'powered-by__logo')} width={60} role="img" aria-label="Rocket.Chat" />
+		{I18n.t('Powered by iCloudPortal').split('iCloudPortal')[0]}
+		<a href="https://icloudportal.com" target="_blank" rel="noopener noreferrer">
+			<Logo className={createClassName(styles, 'powered-by__logo')} width={60} role="img" aria-label="iCloudPortal" />
 		</a>
-		{I18n.t('Powered by Rocket.Chat').split('Rocket.Chat')[1]}
+		{I18n.t('Powered by iCloudPortal').split('iCloudPortal')[1]}
 	</h3>
 );
 
