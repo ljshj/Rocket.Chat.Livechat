@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.1.1 - 2019-08-03
 * [IMPROVE] Chinese translation
+* [FIX] IME（onCompositionStart,onCompositionUpdate,onCompositionEnd）
 
 ## 1.1.0 - 2019-07-24
 * [CHORE] Code base maintenance
