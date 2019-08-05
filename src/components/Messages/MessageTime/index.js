@@ -5,7 +5,7 @@ import { createClassName, memo } from '../../helpers';
 import styles from './styles.scss';
 
 
-export const parseDate = (ts) => format(ts, isToday(ts) ? 'HH:mm' : 'dddd HH:mm');
+export const parseDate = (ts) => format(ts, isToday(ts) ? 'HH:mm' : 'YYYY-MM-DD HH:mm');
 
 export const MessageTime = memo(({ ts, className, style = {} }) => (
 	<time
