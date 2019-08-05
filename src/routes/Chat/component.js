@@ -64,8 +64,7 @@ export default class Chat extends Component {
 	}
 
 	handleChangeText = (text) => {
-		//this.setState({ text });
-		//console.log(text);
+		this.setState({ text });
 		const { onChangeText } = this.props;
 		onChangeText && onChangeText(text);
 	}
