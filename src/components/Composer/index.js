@@ -184,7 +184,7 @@ export class Composer extends Component {
 						},
 						contentEditable: true,
 						'data-placeholder': placeholder,
-						onInput: this.handleInput(onChange),
+						onKeyup: this.handleInput(onChange),
 						onKeypress: this.handleKeypress(onSubmit),
 						onPaste: this.handlePaste(onUpload),
 						onDrop: this.handleDrop(onUpload),
