@@ -62,10 +62,10 @@ export class Composer extends Component {
 	}
 
 	handleInput = (onChange) => () => {
-		if(!this.compositionType || this.compositionType === 'compositionend'){
+		if(!!!this.compositionType){
 			onChange && onChange(this.el.innerText);
 		}
-		
+
 	}
 
 	handleKeypress = (onSubmit) => (event) => {
@@ -122,8 +122,12 @@ export class Composer extends Component {
 		texts.forEach((text) => this.pasteText(text));
 	}
 
-	handleComposition = () =>  (event) => {
+	handleComposition = (onChange) =>  (event) => {
+		//console.log(event.type + ": " + event.target.innerText);
 		this.compositionType = event.type;
+		if(this.compositionType === 'compositionend'){
+			onChange && onChange(this.el.innerText);
+		}
 	}
 
 	pasteText = (plainText) => {
@@ -195,9 +199,9 @@ export class Composer extends Component {
 						onKeypress: this.handleKeypress(onSubmit),
 						onPaste: this.handlePaste(onUpload),
 						onDrop: this.handleDrop(onUpload),
-						onCompositionStart:this.handleComposition(),
-						onCompositionUpdate:this.handleComposition(),
-						onCompositionEnd:this.handleComposition(),
+						onCompositionStart:this.handleComposition(onChange),
+						onCompositionUpdate:this.handleComposition(onChange),
+						onCompositionEnd:this.handleComposition(onChange),
 					}
 				)}
 				className={createClassName(styles, 'composer__input')}
