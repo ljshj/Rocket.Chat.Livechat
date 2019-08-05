@@ -12,14 +12,14 @@
     "choose_an_option_26ac97d2": "选择一个选项...",
     "conversation_finished_6a0f2811": "会话已结束",
     "count_new_messages_since_since_47c9d2a0": {
-      "one": "从%{since}到现在有一条新消息",
-      "other": "从%{since}到现在有%{count}条新消息"
+      "one": "您有一条新消息",
+      "other": "您有%{count}条新消息"
     },
     "department_switched_cff305cf": "部门切换",
     "departments_3826b025": "部门",
     "disable_notifications_dd6a3180": "关闭信息通知",
     "dismiss_this_alert_ea9b3104": "关闭提醒",
-    "drop_here_to_upload_a_file_e5f4dd60": "拖拽一个要上传的文件",
+    "drop_here_to_upload_a_file_e5f4dd60": "放下要上传的文件",
     "email_22a7d52d": "电子邮件",
     "enable_notifications_a3daf4b1": "打开消息通知",
     "error_closing_chat_4c5e29d7": "关闭聊天出错",
