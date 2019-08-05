@@ -64,9 +64,8 @@ export default class Chat extends Component {
 	}
 
 	handleChangeText = (text) => {
-		if(text.length>1){
-			this.setState({ text });
-		}
+		this.setState({ text });
+		console.log(text);
 		const { onChangeText } = this.props;
 		onChangeText && onChangeText(text);
 	}
@@ -154,7 +153,7 @@ export default class Chat extends Component {
 						onSubmit={this.handleSubmit}
 						onChange={this.handleChangeText}
 						placeholder={I18n.t('Type your message here')}
-						value={text}
+					
 						pre={emoji && (
 							<ComposerActions>
 								<ComposerAction>
